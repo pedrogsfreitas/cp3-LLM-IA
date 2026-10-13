@@ -1,0 +1,10 @@
+# PyTorch com CUDA 13.0 é instalado separadamente (não pelo PyPI padrão):
+#   pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+transformers
+peft
+datasets
+accelerate
+bitsandbytes
+gradio
+pandas
+pyyaml

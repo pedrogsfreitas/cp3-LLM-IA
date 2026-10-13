@@ -1,0 +1,167 @@
+{
+  "name": "exp2_lr_baixo",
+  "config": {
+    "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "load_in_4bit": false,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "learning_rate": 5e-05,
+    "num_epochs": 2,
+    "batch_size": 4,
+    "grad_accum": 4,
+    "max_length": 1024,
+    "warmup_ratio": 0.05,
+    "seed": 42,
+    "name": "exp2_lr_baixo"
+  },
+  "gpu": "NVIDIA GeForce RTX 2060 SUPER",
+  "train_loss": 0.12392183093147145,
+  "eval_loss": 0.03151755779981613,
+  "train_time_s": 599.0,
+  "peak_vram_gb": 7.84,
+  "steps": 72,
+  "log_history": [
+    {
+      "loss": 0.5517035007476807,
+      "grad_norm": 0.9779319167137146,
+      "learning_rate": 4.9974091841168195e-05,
+      "epoch": 0.1388888888888889,
+      "step": 5
+    },
+    {
+      "loss": 0.32578861713409424,
+      "grad_norm": 0.5631182789802551,
+      "learning_rate": 4.907293218369499e-05,
+      "epoch": 0.2777777777777778,
+      "step": 10
+    },
+    {
+      "loss": 0.21001219749450684,
+      "grad_norm": 0.4456680119037628,
+      "learning_rate": 4.6929565060064864e-05,
+      "epoch": 0.4166666666666667,
+      "step": 15
+    },
+    {
+      "loss": 0.1423812747001648,
+      "grad_norm": 0.3910224437713623,
+      "learning_rate": 4.365459214619214e-05,
+      "epoch": 0.5555555555555556,
+      "step": 20
+    },
+    {
+      "loss": 0.11457844972610473,
+      "grad_norm": 0.43630850315093994,
+      "learning_rate": 3.941700805287168e-05,
+      "epoch": 0.6944444444444444,
+      "step": 25
+    },
+    {
+      "loss": 0.08385714292526245,
+      "grad_norm": 0.45471641421318054,
+      "learning_rate": 3.443547989381536e-05,
+      "epoch": 0.8333333333333334,
+      "step": 30
+    },
+    {
+      "loss": 0.07653148770332337,
+      "grad_norm": 0.31557193398475647,
+      "learning_rate": 2.8967063661406285e-05,
+      "epoch": 0.9722222222222222,
+      "step": 35
+    },
+    {
+      "eval_loss": 0.05218508094549179,
+      "eval_runtime": 9.8591,
+      "eval_samples_per_second": 6.39,
+      "eval_steps_per_second": 1.623,
+      "epoch": 1.0,
+      "step": 36
+    },
+    {
+      "loss": 0.05861109495162964,
+      "grad_norm": 0.28411275148391724,
+      "learning_rate": 2.329393966588323e-05,
+      "epoch": 1.1111111111111112,
+      "step": 40
+    },
+    {
+      "loss": 0.04346964061260224,
+      "grad_norm": 0.2707573473453522,
+      "learning_rate": 1.7708851513629377e-05,
+      "epoch": 1.25,
+      "step": 45
+    },
+    {
+      "loss": 0.030441093444824218,
+      "grad_norm": 0.16110390424728394,
+      "learning_rate": 1.2500000000000006e-05,
+      "epoch": 1.3888888888888888,
+      "step": 50
+    },
+    {
+      "loss": 0.047792255878448486,
+      "grad_norm": 0.2751196622848511,
+      "learning_rate": 7.936171419533653e-06,
+      "epoch": 1.5277777777777777,
+      "step": 55
+    },
+    {
+      "loss": 0.028956079483032228,
+      "grad_norm": 0.28891390562057495,
+      "learning_rate": 4.252867700024374e-06,
+      "epoch": 1.6666666666666665,
+      "step": 60
+    },
+    {
+      "loss": 0.025561681389808653,
+      "grad_norm": 0.24875858426094055,
+      "learning_rate": 1.6401540709832242e-06,
+      "epoch": 1.8055555555555556,
+      "step": 65
+    },
+    {
+      "loss": 0.028646203875541686,
+      "grad_norm": 0.26017069816589355,
+      "learning_rate": 2.3285134909173112e-07,
+      "epoch": 1.9444444444444444,
+      "step": 70
+    },
+    {
+      "eval_loss": 0.03151755779981613,
+      "eval_runtime": 9.23,
+      "eval_samples_per_second": 6.826,
+      "eval_steps_per_second": 1.733,
+      "epoch": 2.0,
+      "step": 72
+    },
+    {
+      "train_runtime": 598.8375,
+      "train_samples_per_second": 1.924,
+      "train_steps_per_second": 0.12,
+      "total_flos": 5658095812780032.0,
+      "train_loss": 0.12392183093147145,
+      "epoch": 2.0,
+      "step": 72
+    },
+    {
+      "eval_loss": 0.03151755779981613,
+      "eval_runtime": 10.1224,
+      "eval_samples_per_second": 6.224,
+      "eval_steps_per_second": 1.581,
+      "epoch": 2.0,
+      "step": 72
+    }
+  ],
+  "adapter_dir": "outputs\\exp2_lr_baixo\\adapter"
+}

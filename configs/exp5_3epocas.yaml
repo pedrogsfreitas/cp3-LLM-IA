@@ -1,0 +1,9 @@
+# Variação do número de épocas: 3 épocas
+name: exp5_3epocas
+load_in_4bit: false
+lora_r: 16
+lora_alpha: 32
+learning_rate: 2.0e-4
+num_epochs: 3
+batch_size: 4
+grad_accum: 4

@@ -1,0 +1,9 @@
+# Variação do rank do LoRA: r=8 (metade dos parâmetros treináveis do baseline)
+name: exp3_rank8
+load_in_4bit: false
+lora_r: 8
+lora_alpha: 16
+learning_rate: 2.0e-4
+num_epochs: 2
+batch_size: 4
+grad_accum: 4

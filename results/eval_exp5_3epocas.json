@@ -1,0 +1,37 @@
+{
+  "name": "exp5_3epocas",
+  "adapter": "outputs/exp5_3epocas/adapter",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "load_in_4bit": false,
+  "generation": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_new_tokens": 256
+  },
+  "split": "test",
+  "n": 120,
+  "execution_accuracy": 90.0,
+  "valid_sql": 97.5,
+  "exact_match": 82.5,
+  "avg_latency_s": 4.832,
+  "avg_tokens_per_s": 11.5,
+  "peak_vram_gb": 3.04,
+  "gpu": "NVIDIA GeForce RTX 2060 SUPER",
+  "by_db": {
+    "vendas": {
+      "n": 50,
+      "execution_accuracy": 94.0,
+      "valid_sql": 94.0
+    },
+    "rh": {
+      "n": 35,
+      "execution_accuracy": 91.4,
+      "valid_sql": 100.0
+    },
+    "financeiro": {
+      "n": 35,
+      "execution_accuracy": 82.9,
+      "valid_sql": 100.0
+    }
+  }
+}

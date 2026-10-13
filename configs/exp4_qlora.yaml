@@ -1,0 +1,9 @@
+# QLoRA: modelo base quantizado em 4 bits (menos VRAM), demais parâmetros iguais ao baseline
+name: exp4_qlora
+load_in_4bit: true
+lora_r: 16
+lora_alpha: 32
+learning_rate: 2.0e-4
+num_epochs: 2
+batch_size: 4
+grad_accum: 4

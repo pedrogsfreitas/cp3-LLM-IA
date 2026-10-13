@@ -1,0 +1,9 @@
+# Variação de learning rate: 5e-5 (4x menor que o baseline)
+name: exp2_lr_baixo
+load_in_4bit: false
+lora_r: 16
+lora_alpha: 32
+learning_rate: 5.0e-5
+num_epochs: 2
+batch_size: 4
+grad_accum: 4
